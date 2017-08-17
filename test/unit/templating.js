@@ -77,36 +77,36 @@ describe("templating.js", function() {
                                 '<span>Processing dropped files...</span>' +
                                 '<span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>' +
                             '</span>' +
-							'<table>' +
-								'<thead>' +
-									'<tr>' +
-										'<th>File</th>' +
-										'<th>Actions</th>' +
-									'</tr>' +
-								'</thead>' +
-								'<tbody class="qq-upload-list-selector">' +
-									'<tr>' +
-										'<td>' +
-											'<div class="qq-progress-bar-container-selector">' +
-												'<div class="qq-progress-bar-selector qq-progress-bar"></div>' +
-											'</div>' +
-											'<span class="qq-upload-spinner-selector qq-upload-spinner"></span>' +
-											'<span class="qq-edit-filename-icon-selector qq-edit-filename-icon"></span>' +
-											'<span class="qq-upload-file-selector qq-upload-file"></span>' +
-											'<input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">' +
-											'<span class="qq-upload-size-selector qq-upload-size"></span>' +
-										'</td>' +
-										'<td>' +
-											'<a class="qq-upload-cancel-selector qq-upload-cancel" href="#">Cancel</a>' +
-											'<a class="qq-upload-retry-selector qq-upload-retry" href="#">Retry</a>' +
-											'<a class="qq-upload-delete-selector qq-upload-delete" href="#">Delete</a>' +
-											'<a class="qq-upload-pause-selector" href="#">Pause</a>' +
-											'<a class="qq-upload-continue-selector" href="#">Continue</a>' +
-											'<span class="qq-upload-status-text-selector qq-upload-status-text"></span>' +
-										'</td>' +
-									'</tr>' +
-								'</tbody>' +
-							'</table>' +
+                            '<table>' +
+                                '<thead>' +
+                                    '<tr>' +
+                                        '<th>File</th>' +
+                                        '<th>Actions</th>' +
+                                    '</tr>' +
+                                '</thead>' +
+                                '<tbody class="qq-upload-list-selector">' +
+                                    '<tr>' +
+                                        '<td>' +
+                                            '<div class="qq-progress-bar-container-selector">' +
+                                                '<div class="qq-progress-bar-selector qq-progress-bar"></div>' +
+                                            '</div>' +
+                                            '<span class="qq-upload-spinner-selector qq-upload-spinner"></span>' +
+                                            '<span class="qq-edit-filename-icon-selector qq-edit-filename-icon"></span>' +
+                                            '<span class="qq-upload-file-selector qq-upload-file"></span>' +
+                                            '<input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">' +
+                                            '<span class="qq-upload-size-selector qq-upload-size"></span>' +
+                                        '</td>' +
+                                        '<td>' +
+                                            '<a class="qq-upload-cancel-selector qq-upload-cancel" href="#">Cancel</a>' +
+                                            '<a class="qq-upload-retry-selector qq-upload-retry" href="#">Retry</a>' +
+                                            '<a class="qq-upload-delete-selector qq-upload-delete" href="#">Delete</a>' +
+                                            '<a class="qq-upload-pause-selector" href="#">Pause</a>' +
+                                            '<a class="qq-upload-continue-selector" href="#">Continue</a>' +
+                                            '<span class="qq-upload-status-text-selector qq-upload-status-text"></span>' +
+                                        '</td>' +
+                                    '</tr>' +
+                                '</tbody>' +
+                            '</table>' +
                         '</div>';
 
 
@@ -478,7 +478,7 @@ describe("templating.js", function() {
         });
 
         it("is able to find the file ID given a button element", function() {
-			var deleteButtonEl, cancelButtonEl, retryButtonEl;
+            var deleteButtonEl, cancelButtonEl, retryButtonEl;
             deleteButtonEl = $(fileContainer0).find(".qq-upload-delete-selector")[0];
             cancelButtonEl = $(fileContainer0).find(".qq-upload-cancel-selector")[0];
             retryButtonEl = $(fileContainer0).find(".qq-upload-retry-selector")[0];
